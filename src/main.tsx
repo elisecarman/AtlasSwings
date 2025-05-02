@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import App from './App.tsx'
-import Personas from './pages/Personas.tsx';
+import AtlasSwings from './pages/AtlasSwings.tsx';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,13 +12,13 @@ const root = ReactDOM.createRoot(
 
 const router = createBrowserRouter([
   {
-      path: '/Personas/',
+      path: '/AtlasSwings/',
       element: <App/>,
       // errorElement: <NotFound/>,
       children: [
         {
-          path:'/Personas/',
-          element: <Personas/>
+          path:'/AtlasSwings/',
+          element: <AtlasSwings/>
         },
       ]
   }
